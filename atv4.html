@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*4 - Criar uma função que irá receber um número (via prompt) e exibir um alerta
+        dizendo se ele é par ou ímpar. Após exibir a mensagem, irá perguntar ao usuário se
+        ele deseja informar mais números. Se a resposta for verdadeira, deve-se repetir o
+        processo, caso contrário, a função é encerrada.*/    
+        function verificar(){
+            let num = Number(prompt('Diga um número: '))
+            if(num%2 == 0){
+                let sn = Boolean(confirm('O número é par. Deseja informar mais algum número? '))
+                if(sn === true){
+                    verificar()
+                }else{
+                    
+                }
+            }else{
+                let dn = Boolean(confirm('O número é impar. Deseja informar mais algum número? '))
+                if(dn === true){
+                    verificar()
+                }else{
+                    
+                }
+            }
+        }
+                
+        var button = document.createElement('button');
+        button.setAttribute('type', 'button');
+        button.setAttribute('value', 'Executar');
+        button.innerHTML
+        button.textContent = "Executar"
+        document.body.appendChild(button)
+    
+        button.addEventListener('click', function(){
+            verificar()
+        })
+
+    </script>
+    
+</body>
+</html>

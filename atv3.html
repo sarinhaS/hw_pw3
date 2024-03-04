@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            function total(){
+                let media = 0 
+                for(let i = 1; i <= 5; i++){
+                    let s1 = Number(prompt('Qual o salário do '+ i +'° empregado?'));
+                    media = media + s1;
+                }
+                console.log(media)
+                
+                alert('O valor gasto pela empresa com o pagamento dos funcionarios é de: ' + media + ' reais')
+            }
+            
+            var button = document.createElement('button');
+            button.setAttribute('type', 'button');
+            button.setAttribute('value', 'Executar');
+            button.innerHTML
+            button.textContent = "Executar"
+            document.body.appendChild(button)
+
+            button.addEventListener('click', function(){
+                total()
+            })
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id='body'></div>
+    <script>
+        let body = document.getElementById('body')
+        function vm(){
+            let distancia = prompt('Qual é a distância (m) percorrida?');
+            let tempo = prompt('Em quanto tempo (s) ?');
+
+            alert('A velocidade média é de: ' + (distancia/tempo).toFixed(2) + "m/s");
+        }
+
+        var button = document.createElement('button');
+        button.setAttribute('type', 'button');
+        button.setAttribute('value', 'Executar');
+        button.innerHTML
+        button.textContent = "Executar"
+        body.appendChild(button)
+
+        button.addEventListener('click', function(){
+            vm()
+        })
+
+    </script>
+</body>
+</html>
